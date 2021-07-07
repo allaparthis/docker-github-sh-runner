@@ -20,7 +20,7 @@ LABEL org.label-schema.schema-version="1.0" \
     org.label-schema.build-date=$BUILD_DATE \
     org.label-schema.vcs-ref=$VCS_REF \
     org.label-schema.description="Dockerized GitHub Actions runner." \
-    org.label-schema.docker.cmd="docker run -it suresh3165/docker-sh-runner:latest"
+    org.label-schema.docker.cmd="docker run -it suresh3165/docker-github-sh-runner:latest"
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
     apt-get install -y \

@@ -2,10 +2,10 @@ version: "3.7"
 
 services:
     runner:
-      image: suresh3165/docker-sh-runner:latest
+      image: suresh3165/docker-github-sh-runner:latest
       environment:
         #Container id will be the runner name
-        #RUNNER_NAME: "my-runner_${HOSTNAME}"
+        #RUNNER_NAME: "my-runner"
         RUNNER_REPOSITORY_URL: ${RUNNER_REPOSITORY_URL}
         #RUNNER_ORGANIZATION_URL: ${RUNNER_ORGANIZATION_URL}
         GITHUB_ACCESS_TOKEN: ${GITHUB_ACCESS_TOKEN}

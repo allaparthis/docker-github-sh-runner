@@ -6,7 +6,7 @@ fi
 
 if [[ -z $RUNNER_NAME ]]; then
     echo "RUNNER_NAME environment variable is not set, using '${HOSTNAME}'."
-    export RUNNER_NAME=${HOSTNAME}
+    export RUNNER_NAME="Container-Id-${HOSTNAME}"
 fi
 
 if [[ -z $RUNNER_WORK_DIRECTORY ]]; then
